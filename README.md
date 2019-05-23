@@ -13,3 +13,8 @@ I was particularly interested in using story as a predictor for box office beyon
 After this process, I also used the doc vectors to examine the relationship between plot and box office directly, as well as been the plots themselves. I performed the dimensionality reduction using PCA for the resulting visualizations.
 ![cleaning functions](images/box_story.png?raw=true "Title")
 ![cleaning functions](images/story.png?raw=true "Title")
+
+## Model and Results
+This project made extensive use of dimensionality reduction, as my initial dataset after the one-hot encoding of categorical variables was over 5000 dimensions. Because of this the effectiveness of my features was primarily assessed by directly examining the effect of their inclusion or exclusion on the performance of my model and my evaluation metrics (RMSE, r-squared, explained variance score, mean absolute error, median absolute error). In an effort to maintain intrepretability, I generated a correlation heatmap of the relationships between my final features and my target, with the caveat that PCA and SVD were needed to generate it and this is not an accurate representation of the dimensionality of the dataset used for prediction.
+![cleaning functions](images/corr_map.png?raw=true "Title")
+I used XGBoost for the final model as it was the best performer in intial experiments. The final tuned values are as follows:
