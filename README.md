@@ -18,3 +18,7 @@ After this process, I also used the doc vectors to examine the relationship betw
 This project made extensive use of dimensionality reduction, as my initial dataset after the one-hot encoding of categorical variables was over 5000 dimensions. Because of this the effectiveness of my features was primarily assessed by directly examining the effect of their inclusion or exclusion on the performance of my model and my evaluation metrics (RMSE, r-squared, explained variance score, mean absolute error, median absolute error). In an effort to maintain intrepretability, I generated a correlation heatmap of the relationships between my final features and my target, with the caveat that PCA and SVD were needed to generate it and this is not an accurate representation of the dimensionality of the dataset used for prediction.
 ![cleaning functions](images/corr_map.png?raw=true "Title")
 I used XGBoost for the final model as it was the best performer in intial experiments. The final tuned values are as follows:
+![cleaning functions](images/regressor.jpeg?raw=true "Title")
+And the results:
+![cleaning functions](images/pva.png?raw=true "Title")
+![cleaning functions](images/residual_plot.png?raw=true "Title")
