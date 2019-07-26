@@ -22,3 +22,6 @@ I used XGBoost for the final model as it was the best performer in intial experi
 And the results:
 ![cleaning functions](images/pva.png?raw=true "Title")
 ![cleaning functions](images/residual_plot.png?raw=true "Title")
+
+
+
